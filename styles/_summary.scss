@@ -1,0 +1,99 @@
+@import './constants';
+@import './functions';
+
+#summary
+{
+    align-items: start ;
+    
+    #summary-head 
+    {
+        margin-bottom : pxToRem(25px);
+        color : $sec-bg-color;
+    }
+    
+    .marks-box
+    {
+        width: 100%;
+        @include flex-prop(row,space-between,center);
+        margin-bottom: pxToRem(15px) ;
+        padding: pxToRem(10px); 
+        border-radius: pxToRem(8px) ;
+        font-size: 0.8rem;
+
+        img,svg 
+        {
+            height: .95rem;
+            width: .95rem;
+        } 
+
+        .part-1
+        {
+            display: flex;
+            gap : pxToRem(5px);
+        }
+        .part-2
+        {
+            display: flex;
+            .light-color
+            {
+                color : $sec-bg-color;
+            }
+        }
+    }
+
+    #reaction
+    {
+        background-color: hsla(0, 100%, 67%, 0.08);
+        .part-1
+        {
+            color :hsla(0, 100%, 67%);
+        }
+    }
+
+    #memory
+    {
+        background-color: hsla(39, 100%, 56%, 0.08) ;
+        .part-1
+        {
+            color :hsla(39, 100%, 56%);
+        }
+    }
+
+    #verbal
+    {
+        background-color: hsl(166, 100%, 37%,0.08);
+        .part-1
+        {
+            color : hsl(166, 100%, 37%);
+        }
+        
+    }
+
+    #visual
+    {
+        background-color: hsl(234, 85%, 45%,0.08);
+        .part-1
+        {
+            color : hsl(234,85%,45%);
+        }
+    }
+
+    button
+    {
+        margin-top: pxToRem(20px);
+        width: 100%;
+        padding-block: pxToRem(9px);
+        border-radius: pxToRem(20px);
+        border: none;
+        background-color: $sec-bg-color;
+        color: $primary-txt-color;
+        font-size: .8rem;
+    
+    &:hover
+    {
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        cursor: pointer;
+    }
+    
+    }
+}

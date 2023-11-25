@@ -1,0 +1,40 @@
+@import './functions'; 
+
+
+@media screen and (max-width : 600px) 
+{
+    body 
+    {
+        width : 100%;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    #container
+    {
+        margin:0 !important;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 0 !important;
+        overflow: auto !important;
+    }
+
+    #result
+    {
+        padding-top: pxToRem(15px);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+        .res-circle
+        {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+    }
+    button 
+    {
+        margin-top: 0;
+    }
+    
+}

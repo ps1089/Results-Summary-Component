@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+@function pxToRem($pxValue) 
+{
+    @return math.div($pxValue, 18px) * 1rem; 
+}
+
+@mixin flex-prop($dir,$justify,$align)
+{
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}

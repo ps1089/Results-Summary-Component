@@ -1,0 +1,49 @@
+@import './constants';
+@import './functions';
+
+#result
+{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 1.8rem;
+    
+    p
+    {
+        font-size: 0.83rem;
+        color : hsla(222, 100%, 96%, 0.664);
+    }
+    
+    #res-head
+    {
+       margin-bottom : pxToRem(25px);
+       color : hsla(222, 100%, 96%, 0.664);
+    }
+
+    .res-circle
+    {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        border: none;
+        @include flex-prop(column,center,center);
+        margin-bottom : pxToRem(20px);
+
+        #circle-head
+        {
+            font-size: 3.2rem;
+            color : $primary-txt-color;
+        }
+    }
+
+    #content-head
+    {
+        margin-bottom : pxToRem(10px);
+        font-size: 1.25rem;
+        color : $primary-txt-color;
+    }
+
+    #content
+    {
+        text-align: center;
+    };
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Results summary component</title>
+
+</head>
+<body>
+  <main id="container">
+    
+    <!-- Result section -->
+    <section id="result" class="common-props">
+      <h1 id="res-head" class="common-head">Your Result</h1>
+      <div class="res-circle">
+        <h2 id="circle-head">76</h2>
+        <p>of 100</p>
+      </div>
+      <h2 id="content-head">Great</h2>
+      <p id="content">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+
+    <!-- Summary section -->
+    <section id="summary" class="common-props">
+      <h2 id="summary-head" class="common-head">Summary</h2>
+      
+      <!-- Reaction -->
+      <div class="marks-box" id="reaction">
+        <div class="part-1">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction-icon">
+          <p>Reaction</p>
+        </div>
+        <div class="part-2">
+          <p id="reaction-score"></p>
+          <p class="light-color">&#160;100</p>
+        </div>
+      </div>
+      
+      <!-- Memory -->
+      <div class="marks-box" id="memory">
+        <div class="part-1">
+          <img src="./assets/images/icon-memory.svg" alt="memory-icon">
+          <p>Memory</p>
+        </div>
+        <div class="part-2">
+          <p id="memory-score"></p>
+          <p class="light-color">&#160;100</p>
+        </div>
+      </div>
+      
+      <!-- Verbal -->
+      <div class="marks-box" id="verbal">
+        <div class="part-1">
+          <img src="./assets/images/icon-verbal.svg" alt="verbal-icon">
+          <p>Verbal</p>
+        </div>
+        <div class="part-2">
+          <p id="verbal-score"></p>
+          <p class="light-color">&#160;100</p>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="marks-box" id="visual">
+        <div class="part-1">
+          <img src="./assets/images/icon-visual.svg" alt="visual-icon">
+          <p>Visual</p>
+        </div>
+        <div class="part-2">
+          <p id="visual-score"></p>
+          <p class="light-color">&#160;100</p>
+        </div>
+      </div>
+
+      <button>Continue</button>
+
+    </section>
+  </main>
+
+<script type="module" src="script/script.js"></script>
+</body>
+</html>
